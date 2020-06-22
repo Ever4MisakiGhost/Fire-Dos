@@ -163,7 +163,7 @@ try:
             th = threading.Thread(target=syn_dos)
             th.start()
             threads.append(th)
-
+            time.sleep(0.1)
         for i in threads:
             i.join()
 
